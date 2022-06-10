@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".form_login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/loginlayout"
+        android:background="@color/white"
+        android:padding="25dp"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Email or User Name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            app:shapeAppearanceOverlay="@style/Button4"
+            app:boxStrokeColor="#4E4A4A"
+            app:boxStrokeWidth="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textPersonName|textEmailAddress"
+                android:id="@+id/email_user"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Password"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            app:shapeAppearanceOverlay="@style/Button4"
+            app:boxStrokeColor="#4E4A4A"
+            app:boxStrokeWidth="1dp"
+            app:endIconMode="password_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textPassword"
+                android:id="@+id/passwords_s"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/forgot_password"
+            android:textSize="11sp"
+            android:text="Forget Password?"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textColor="#616161"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/singIn"
+        android:text="@string/log_in"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:elevation="15dp"
+        android:gravity="center"
+        android:layout_marginStart="24dp"
+        app:shapeAppearanceOverlay="@style/Button5"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/dark_purple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="15sp"
+            android:text="Didn't have account?"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#616161"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/Register_Now"
+            android:textSize="15sp"
+            android:text="Register Now!"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#616161"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>
